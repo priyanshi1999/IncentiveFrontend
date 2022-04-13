@@ -1,0 +1,10 @@
+a{
+    color: white;
+    text-decoration: none;
+}
+.navDiv{
+    display: flex;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    width: 100%;
+}

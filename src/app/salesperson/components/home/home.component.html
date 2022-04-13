@@ -1,0 +1,19 @@
+<div class="container">
+    <div>
+        <h1 class="commissionText">
+            Commission Earned: <span>12</span>
+        </h1>
+        <h1 class="quotaText">
+            Monthly quota: <span>14</span>
+        </h1>
+    </div>
+    <div class="chart">
+        <canvas baseChart
+                [data]="pieChartData"
+                [type]="pieChartType"
+                [options]="pieChartOptions"
+        >
+        </canvas>
+      </div>
+      
+</div>

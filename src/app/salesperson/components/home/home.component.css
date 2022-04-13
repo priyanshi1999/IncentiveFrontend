@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+}
+.commissionText{
+    margin-left: 5em;
+    margin-top: 6em;
+    padding: 0;
+}
+.quotaText{
+    margin-top: 2em;
+    margin-left: 5em;
+    padding: 0;
+}
+
+.chart{
+    width: 100%;
+    margin-left: 40em;
+    margin-top: 8em;
+}
