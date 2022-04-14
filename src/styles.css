@@ -5,7 +5,5 @@
 html, body { height: 100%; }
 body { 
     margin: 0; 
-    /* font-family: "Poppins";  */
-    /* font-family: 'Josefin Sans', sans-serif; */
     font-family: "Poppins";
 }
