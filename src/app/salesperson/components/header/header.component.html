@@ -1,8 +1,20 @@
 <div class="container">
-    <mat-toolbar>
-        <div class="navDiv">
-            <a class="historyText" routerLink="/history">History</a>
-            <a class="logoutText">Logout</a>
-        </div>
-    </mat-toolbar>
+  <mat-toolbar>
+    <div class="navDiv">
+      <div class="right">
+        <a class="accountText" mat-button [matMenuTriggerFor]="menu">MyAccount</a>
+        <mat-menu #menu="matMenu">
+          <a mat-menu-item>Name- <span>Priyanshi Saxena</span></a>
+          <a mat-menu-item>Email- <span>pri@123</span></a>
+          <a mat-menu-item>Phone- <span>1234567890</span></a>
+          <a mat-menu-item>City- <span>Gurugram</span></a>
+        </mat-menu>
+
+        <a class="historyText" routerLink="/history">History</a>
+      </div>
+      <div class="left">
+        <a class="logoutText">Logout</a>
+      </div>
+    </div>
+  </mat-toolbar>
 </div>
