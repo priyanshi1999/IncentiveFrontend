@@ -33,8 +33,18 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-   
+    this.changeNumbers(12, "comm");
+    this.changeNumbers(14, "quota");
   }
-  
 
+  changeNumbers(data: any, id: any){
+    var counterComm= document.getElementById(id);
+    let count=1;
+    setInterval( () => {
+      if(count < data){
+        count++;
+        counterComm.innerText= count.toString();
+      }
+    } ,1);
+  }
 }
