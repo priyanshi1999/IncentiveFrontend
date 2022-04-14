@@ -7,7 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HomeComponent } from './components/home/home.component';
 import { NgChartsModule } from 'ng2-charts';
-
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { NgChartsModule } from 'ng2-charts';
     CommonModule,
     SalespersonRoutingModule,
     MatToolbarModule,
-    NgChartsModule 
+    NgChartsModule,
+    MatMenuModule
   ]
 })
 export class SalespersonModule { }

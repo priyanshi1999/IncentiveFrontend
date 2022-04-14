@@ -1,8 +1,8 @@
-a{
+/* a{
     color: white;
     text-decoration: none;
     padding: 0.8em;
-}
+} */
 .navDiv{
     display: flex;
     /* justify-content: flex-end; */
@@ -16,9 +16,33 @@ mat-toolbar{
     color: black;
     font-weight: bold;
     font-size: 1.2em;
+    cursor: pointer;
 }
 .logoutText:hover{
     color: black;
     font-weight: bold;
     font-size: 1.2em;
+    cursor: pointer;
 }
+.historyText{
+    color: white;
+    text-decoration: none;
+    padding: 0.8em;
+}
+.logoutText{
+    color: white;
+    text-decoration: none;
+    padding: 0.8em;
+}
+.accountText{
+    color: white;
+    text-decoration: none;
+    padding: 0.8em;
+}
+.accountText:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
