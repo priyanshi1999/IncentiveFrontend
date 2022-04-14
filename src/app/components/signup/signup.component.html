@@ -1,0 +1,31 @@
+<div class="content">
+    <div class="container">
+      <div class="row">
+        <div>
+              <img src="../../../assets/img1.svg" alt="Image" class="img-fluid" />
+        </div>
+        <div class="formHolder">
+          <p class="loginText">ENTER DETAILS</p>
+              <div>
+                  <label for="username">Name:</label>
+                  <input type="text" id="username" name="username" />
+                  <label for="phone">Enter your phone number:</label>
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                  <label for="city">City:</label>
+                  <input type="text" id="city" name="city" />
+                  <label for="email">Enter your email:</label>
+                  <input type="email" id="email" pattern=".+@gmail\.com" size="30" required>
+              </div>
+      
+              <div>
+                  <label for="pass">Password (8 characters minimum):</label>
+                  <input type="password" id="pass" name="password" minlength="8" required/>
+              </div>
+              <div class="bottom">
+                  <input type="submit" value="Sign up" class="signIn" />
+                  <!-- <p routerLink="/signup">Don't have an account? Sign up here!</p> -->
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>

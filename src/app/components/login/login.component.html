@@ -1,0 +1,25 @@
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div>
+            <img src="../../../assets/img1.svg" alt="Image" class="img-fluid" />
+      </div>
+      <div class="formHolder">
+        <p class="loginText">PLEASE LOGIN</p>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" />
+            </div>
+    
+            <div>
+                <label for="pass">Password (8 characters minimum):</label>
+                <input type="password" id="pass" name="password" minlength="8" required/>
+            </div>
+            <div class="bottom">
+                <input type="submit" value="Sign in" class="signIn" />
+                <p routerLink="/signup" (click)="signUpClicked()">Don't have an account? Sign up here!</p>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>

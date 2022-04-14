@@ -1,0 +1,89 @@
+.content {
+    padding: 7rem 0; 
+}
+  
+p {
+    color: #838282;
+    font-weight:400;
+    padding-top: 2em;
+}
+p:hover{
+    cursor: pointer;
+    color: #6C63FF;
+}
+input{
+    padding-top: 1em;
+}
+
+
+label {
+    display: block;
+    font: .9rem 'Fira Sans', sans-serif;
+    margin-bottom: 1em;
+}
+
+input[type='submit'],
+label {
+    margin-top: 1rem;
+}
+.signIn{
+    background-color: #6C63FF;
+    color: white;
+    padding: 0.6em 1.3em;
+    border-radius: 5em;
+    border-color: #6C63FF;
+}
+.signIn:hover{
+    cursor: pointer;
+}
+.row{
+    display: flex;
+}
+img{
+    width: 70%;
+}
+.bottom{
+    display: block;
+}
+.formHolder{
+    margin-top: 6em;
+}
+.loginText{
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    padding: 2em;
+    font-size: larger;
+}
+
+    
+content .contents .form-group/*, .content .bg .form-group*/ {
+    overflow: hidden;
+    margin-bottom: 0;
+    padding: 15px 15px;
+    border-bottom: none;
+    position: relative;
+    background: #edf2f5;
+    border-bottom: 1px solid #e6edf1;
+}
+    
+.content .contents .form-group input{
+    
+    background: transparent;
+}
+.content .contents .form-group.first{
+  
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.content .contents .form-group.last {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.content .contents .form-group label {
+    font-size: 12px;
+    display: block;
+    margin-bottom: 0;
+    color: #b3b3b3;
+}
+ 
+  
