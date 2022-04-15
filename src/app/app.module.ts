@@ -9,6 +9,9 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { LoginserviceService } from './services/loginservice.service';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,9 +26,11 @@ import {MatInputModule} from '@angular/material/input';
     MatToolbarModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [LoginserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
