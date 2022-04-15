@@ -10,7 +10,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   data={
-    username:"",
+    email:"",
     password:""
   }
 
@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
   doSubmitForm(){
     console.log("form submitted");
     console.log(this.data);
-    if(this.data.username=='' || this.data.password==''){
+    if(this.data.email=='' || this.data.password==''){
       console.log("empty field");
       
     }
