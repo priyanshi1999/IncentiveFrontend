@@ -1,0 +1,51 @@
+/* a{
+    color: white;
+    text-decoration: none;
+    padding: 0.8em;
+} */
+.navDiv{
+    display: flex;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    width: 100%;
+}
+mat-toolbar{
+    background-color: #616161;
+}
+/* .historyText:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+} */
+.logoutText:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.left{
+    margin-left: 62em;
+}
+/* .historyText{
+    color: white;
+    text-decoration: none;
+    padding: 0.8em;
+} */
+.logoutText{
+    color: white;
+    text-decoration: none;
+    padding: 0.8em;
+}
+/* .accountText{
+    color: white;
+    text-decoration: none;
+    padding: 0.8em;
+}
+.accountText:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+} */
+
