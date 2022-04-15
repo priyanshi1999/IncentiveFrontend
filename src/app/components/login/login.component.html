@@ -4,23 +4,25 @@
       <div>
             <img src="../../../assets/img1.svg" alt="Image" class="img-fluid" />
       </div>
+      <!-- <form (ngSubmit)="doSubmitForm()"> -->
       <div class="formHolder">
         <p class="loginText">PLEASE LOGIN</p>
             <div>
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" />
+                <input type="text" id="username" name="username" [(ngModel)]="data.username"/>
             </div>
     
             <div>
                 <label for="pass">Password (8 characters minimum):</label>
-                <input type="password" id="pass" name="password" minlength="8" required/>
+                <input type="password" id="pass" name="password" minlength="8" [(ngModel)]="data.password" required />
             </div>
             <div class="bottom">
                 <!-- <input routerLink="/home" type="submit" value="Sign in" class="signIn" /> -->
-                <button routerLink="/salesperson/home" class="signIn" type="submit">Sign In</button>
+                <button class="signIn" type="submit" (click)="doSubmitForm()">Sign In</button>
                 <p routerLink="/signup" (click)="signUpClicked()">Don't have an account? Sign up here!</p>
             </div>
       </div>
+    <!-- </form> -->
     </div>
   </div>
 </div>
