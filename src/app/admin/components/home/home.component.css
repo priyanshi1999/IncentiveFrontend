@@ -1,0 +1,15 @@
+.buttonsHolder{
+    display: block;
+    text-align: center;
+    margin-top: 11em;
+}
+button{
+    background-color:rgb(245, 109, 120); 
+    color:white;
+    padding: 1em 1.3em;
+    border-radius: 5em;
+    border-color: rgb(245, 109, 120);
+    font-weight: bold;
+    margin-top: 1em;
+    cursor: pointer;
+}
