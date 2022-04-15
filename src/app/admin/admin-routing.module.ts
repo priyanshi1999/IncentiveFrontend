@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin.component';
 import { AdminModule } from './admin.module';
 import { HomeComponent } from './components/home/home.component';
-import { UploadfileComponent } from './components/uploadfile/uploadfile.component';
 
 const routes: Routes = [
   {
@@ -13,10 +12,6 @@ const routes: Routes = [
       {
         path:'home',
         component: HomeComponent
-      },
-      {
-        path:'upload',
-        component: UploadfileComponent
       }
     ]
   }
