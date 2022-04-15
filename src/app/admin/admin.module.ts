@@ -7,13 +7,15 @@ import { HeaderComponent } from './components/header/header.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HomeComponent } from './components/home/home.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { UploadfileComponent } from './components/uploadfile/uploadfile.component';
 
 
 @NgModule({
   declarations: [
     AdminComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    UploadfileComponent
   ],
   imports: [
     CommonModule,
