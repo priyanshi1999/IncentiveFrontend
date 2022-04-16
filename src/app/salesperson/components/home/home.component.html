@@ -1,10 +1,13 @@
 <div class="container">
-    <div>
+    <div class="textHolder">
         <h1 class="commissionText">
             COMMISSION EARNED: <span id="comm" class="numberCommission">12</span>
         </h1>
         <h1 class="quotaText">
-            MONTHLY QUOTA: <span id="quota" class="numberQuota">14</span>
+            TOTAL MONTHLY QUOTA: <span id="quota" class="numberQuota">{{userDetails[0].quota}}</span>
+        </h1>
+        <h1 class="quotaText">
+            QUOTA ACCOMPLISHED TILL NOW: <span id="quota" class="numberQuotaAcc">14</span>
         </h1>
     </div>
     <div class="chart">

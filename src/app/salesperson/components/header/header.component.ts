@@ -16,8 +16,8 @@ export class HeaderComponent implements OnInit {
     console.log(userData[0].sp_name);
     this.userDetails= [...userData];
     //console.log("userDEtails: "+this.userDetails);
-    userData[0].quota= 50000;
-    console.log(userData[0].quota);
+    // userData[0].quota= 50000;
+    // console.log(userData[0].quota);
     
   }
 

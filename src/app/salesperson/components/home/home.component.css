@@ -35,3 +35,10 @@ body{
     color:#86C7F3;
     font-weight: bold;
 }
+.numberQuotaAcc{
+    color:rgb(250, 188, 54);
+    font-weight: bold;
+}
+.textHolder{
+    margin-top: 0;
+}

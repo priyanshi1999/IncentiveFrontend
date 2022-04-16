@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 //import DatalabelsPlugin from 'chartjs-plugin-datalabels';
 import { ChartConfiguration, ChartData, ChartEvent, ChartType } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
+import { userData } from 'src/app/tempdata/userdata';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,8 @@ import { BaseChartDirective } from 'ng2-charts';
 })
 export class HomeComponent implements OnInit {
   @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
+
+  userDetails:any;
 
   public pieChartData: ChartData<'pie', number[], string | string[]> = {
     labels: [ [ 'Commission Earned' ], [ 'Monthly Quota' ]],
@@ -33,18 +36,19 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.changeNumbers(12, "comm");
-    this.changeNumbers(14, "quota");
+    this.userDetails= [...userData];
+    //this.changeNumbers(12, "comm");
+    //this.changeNumbers(14, "quota");
   }
 
-  changeNumbers(data: any, id: any){
-    var counterComm= document.getElementById(id);
-    let count=1;
-    setInterval( () => {
-      if(count < data){
-        count++;
-        counterComm.innerText= count.toString();
-      }
-    } ,1);
-  }
+  // changeNumbers(data: any, id: any){
+  //   var counterComm= document.getElementById(id);
+  //   let count=1;
+  //   setInterval( () => {
+  //     if(count < data){
+  //       count++;
+  //       counterComm.innerText= count.toString();
+  //     }
+  //   } ,1);
+  // }
 }
