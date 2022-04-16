@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginserviceService } from 'src/app/services/loginservice.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { userData } from 'src/app/tempdata/userdata';
 
 @Component({
   selector: 'app-login',
@@ -32,6 +33,9 @@ export class LoginComponent implements OnInit {
     this.login.doLogin(this.data).subscribe(
       response => {
         console.log(response);
+        userData.push(response);
+        console.log(userData);
+        
         this.router.navigate(['/salesperson/home'])
       },
       error=>{
