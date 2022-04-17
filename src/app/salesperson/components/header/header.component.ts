@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { userData } from 'src/app/tempdata/userdata';
 
 @Component({
@@ -9,20 +10,20 @@ import { userData } from 'src/app/tempdata/userdata';
 export class HeaderComponent implements OnInit {
 
   userDetails:any;
-  constructor() { }
+  constructor(private route:ActivatedRoute, private router:Router) { }
 
   ngOnInit(): void {
-    this.getHeaderData();
     console.log(userData[0].sp_name);
     this.userDetails= [...userData];
     //console.log("userDEtails: "+this.userDetails);
-    userData[0].quota= 50000;
-    console.log(userData[0].quota);
+    // userData[0].quota= 50000;
+    // console.log(userData[0].quota);
     
   }
 
-  getHeaderData(){
-
+  logoutClicked(){
+    userData.pop();
+    console.log(userData);
+    this.router.navigate(['/login']);
   }
-
 }
