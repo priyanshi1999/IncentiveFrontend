@@ -18,4 +18,9 @@ export class LoginserviceService {
     console.log("checking signup"); 
     return this.http.post("http://localhost:8081/signup",data);
   }
+
+  getsales(sp_id: any){
+    return this.http.get('http://localhost:8081/sales/'+sp_id);
+  }
+
 }

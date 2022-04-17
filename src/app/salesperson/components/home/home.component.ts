@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 //import DatalabelsPlugin from 'chartjs-plugin-datalabels';
 import { ChartConfiguration, ChartData, ChartEvent, ChartType } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
+import { LoginserviceService } from 'src/app/services/loginservice.service';
 import { userData } from 'src/app/tempdata/userdata';
 
 @Component({
@@ -33,12 +34,24 @@ export class HomeComponent implements OnInit {
     }
   };
 
-  constructor() { }
+  constructor(private tSales: LoginserviceService) { }
 
   ngOnInit(): void {
     this.userDetails= [...userData];
+    this.displayTotSales();
     //this.changeNumbers(12, "comm");
     //this.changeNumbers(14, "quota");
+  }
+
+  displayTotSales(){
+    this.tSales.getsales(userData[0].sp_id).subscribe(
+      response => {
+        console.log(response);
+      },
+      error=>{
+        console.log(error);
+      }
+    ) 
   }
 
   // changeNumbers(data: any, id: any){
