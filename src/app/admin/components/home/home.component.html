@@ -1,6 +1,7 @@
 <div class="buttonsHolder">
   <div class="button">
-    <button mat-raised-button routerLink="/admin/upload">Upload file</button>
+    <input class="form-control" type="file" (change)="onChange($event)">
+    <button mat-raised-button (click)="uploadClicked()">Upload file</button>
   </div>
   <!-- <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a> -->
   <div class="button">
